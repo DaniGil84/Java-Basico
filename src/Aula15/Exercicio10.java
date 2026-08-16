@@ -1,0 +1,32 @@
+package Aula15;
+
+import java.util.Scanner;
+
+public class Exercicio10 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("--- Programa de detecção de turno ---");
+
+        System.out.println("Indique seu turno");
+        System.out.println("M - Matutino");
+        System.out.println("V - Vespertino");
+        System.out.println("N - Noturno");
+        String turno = scanner.nextLine();
+
+        switch (turno) {
+            case "M":
+            case "Matutino":
+                System.out.println("Bom Dia!");
+            case "V":
+            case "Vespertino":
+                System.out.println("Boa tarde!");
+            case "N":
+            case "Noturno":
+                System.out.println("Boa Noite!");
+                break;
+            default:
+                System.out.println(" Valor Inválido!");
+                break;
+        }
+    }
+}
