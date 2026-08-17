@@ -2,7 +2,7 @@ package Aula15;
 
 import java.util.Scanner;
 
-public class Exercico6 {
+public class Exercicio9 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -10,25 +10,10 @@ public class Exercico6 {
 
         System.out.println("Informe o 1º número");
         float num1 = scanner.nextFloat();
-
         System.out.println("Informe o 2º número");
         float num2 = scanner.nextFloat();
-
         System.out.println("Informe o 3º número");
         float num3 = scanner.nextFloat();
-
-        System.out.println("O 1º número é: " + num1 + ", o 2º número é: " + num2 + ", o 3º número é: " + num3);
-
-        float maior = num1;
-
-        if (num2 > maior) {
-            maior = num2;
-        }
-        if (num3 > maior) {
-            maior = num3;
-        }
-
-        System.out.println("O maior número digitado foi: " + maior);
 
     }
 }

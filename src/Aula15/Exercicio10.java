@@ -11,16 +11,21 @@ public class Exercicio10 {
         System.out.println("M - Matutino");
         System.out.println("V - Vespertino");
         System.out.println("N - Noturno");
-        String turno = scanner.nextLine();
+        String turno = scanner.nextLine().toUpperCase();
 
         switch (turno) {
             case "M":
+            case "m":
             case "Matutino":
                 System.out.println("Bom Dia!");
+                break;
             case "V":
+            case "v":
             case "Vespertino":
                 System.out.println("Boa tarde!");
+                break;
             case "N":
+            case "n":
             case "Noturno":
                 System.out.println("Boa Noite!");
                 break;
