@@ -11,13 +11,14 @@ public class Exercicio4 {
         livro1.leitor = "Gabriel";
         livro1.emprestado = true;
 
+        LivroDeBiblioteca livro2 = new LivroDeBiblioteca();
+        livro2.titulo = "Moonwalk";
+        livro2.autor = "Michael Jackson";
+        livro2.ISBN = "123456789";
+        livro2.data = "20_08_2026";
+        livro2.emprestado = false;
 
-        System.out.println("Título: " + livro1.titulo);
-        System.out.println("Autor: " + livro1.autor);
-        System.out.println("ISBN: " + livro1.ISBN);
-        System.out.println("Preço: " + livro1.data);
-        System.out.println("Livraria: " + livro1.leitor);
-        System.out.println("Livraria: " + livro1.emprestado);
-
+        livro1.imprimir();
+        livro2.imprimir();
     }
 }
